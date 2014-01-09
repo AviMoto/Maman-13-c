@@ -14,3 +14,5 @@
 #include <ctype.h>
 
 #endif /* PERMUT_H_ */
+
+int testWord (char *,char *);
