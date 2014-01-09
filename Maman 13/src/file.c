@@ -15,7 +15,7 @@
  *  @input
  *  char *fileName is the full path of the file
  */
-FILE * getfile(char *fileName){
+FILE * getFile(char *fileName){
 	FILE *fp;
 	fp = (FILE *)fopen(fileName,"r");	/* try to open the file */
 

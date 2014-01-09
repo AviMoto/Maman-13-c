@@ -9,6 +9,7 @@
 #define FILE_H_
 
 #include <stdio.h>
+#include <stdlib.h>
 #define MAX_CHAR_IN_LINE 50
 
 #endif /* FILE_H_ */

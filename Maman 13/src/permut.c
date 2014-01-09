@@ -9,14 +9,14 @@
 #include "file.h"
 
 int main(int argc, char *argv[]){
-	FILE *fp;
+	FILE *fp = NULL;
 	char *line;
 
 	if(argc != 3){
 		fprintf(stderr,"usage: permut filename string");
 		exit(1);
 	}
-	fp = getfile(argv[1]);
+	fp = getFile(argv[1]);
 	while(fgets(line,MAX_CHAR_IN_LINE,fp) != NULL){
 		char *word;
 		word = strtok(line," ");
