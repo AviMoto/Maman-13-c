@@ -27,6 +27,13 @@ FILE * getFile(char *fileName){
 	return fp;
 }
 
+/**
+ * This function release the file resource and report an
+ * error if it can't release it.
+ *
+ * @input
+ * File *fp  - pointer to file
+ */
 void releaseFile(FILE *fp){
 	int error;
 	if((error = fclose(fp)) == 0){
